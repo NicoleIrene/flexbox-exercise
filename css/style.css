@@ -1,5 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 *{
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 }
+body{
+	font-family: 'Raleway', sans-serif;
+}
+h2 {
+	text-align: center;
+}
+#about{
+	color:deeppink;
+}
+.top-nav{
+	display:flex;
+	background: green;	
+	color: ;
+	align-items: center;
+	min-height: 50px;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	overflow: hidden;
+}
+.top-nav a {
+	color: #FFF;
+	text-decoration: none;
+	transition: .5s;
+	border-bottom: 3px solid yellow;
+}
+.top-nav a:hover {
+	color: #FFF;
+	border-bottom: 3px solid indigo;
+}
+.brand-text{
+	font-size: 30px;
+	margin-left: 15px;
+}
+.top-nav-list{
+	display: flex;
+	list-style: none;
+	margin-left: auto;
+}
+.top-nav-list li{
+	margin: 0px 15px;
+	padding: 10px;
+}
+.top-nav-list a{
+	padding:10px;
+}
+
+.full-screen-bg{
+	display: flex;
+	height: calc(100vh - 50px);
+	width: 100%;
+	background: lemonchiffon;
+	background-image: url("../images/flower-large.jpg");
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	color: yellow;
+	align-items: center;
+	transition: background-image .5s;
+}
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+
+}
+.col-4-2-1{
+	width: 23%;
+	margin: 1%;
+	padding: 10px;
+	background-image: url("../images/honey-bees.jpg");
+	color: deeppink;
+}
+.col-4-2-1 p{
+	background-color: yellow;
+}
+.img-circle{
+	border-radius: 50%;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+
+@media(max-width: 1200px) {
+	.full-screen-bg{
+		background-image: url("../images/flower-medium.jpg");
+	}
+	.col-4-2-1 {
+		width: 48%;
+	}
+}
+
+@media(max-width: 600px) {
+	.top-nav {
+		display: block;
+	}
+	.full-screen-bg{
+		background-image: url("../images/flower-small.jpg");
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
